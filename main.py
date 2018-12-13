@@ -70,7 +70,7 @@ y_lb_horario, y_bot_ajuste, y_lb_step, y_radiobutton, y_lb_status, y_bt_aplica =
 
 janela = Tk()
 
-janela.title('Shutdown Programmer')
+janela.title('Desligador 2000')
 janela.geometry('300x200+100+100')
 
 lb_hora = Label(janela, text = '0')
