@@ -1,2 +1,9 @@
 # desligador-2000
-Programador de desligamento de computadores
+
+Pequeno projeto para programar desligamento de computadores com sistema operacional Windows ou Linux.
+
+* Bibliotecas utilizadas:
+os;
+time;
+platform;
+datetime;
