@@ -1,4 +1,4 @@
-import os, time, platform
+import os, platform
 from datetime import datetime
 
 def desligar(tempo):
@@ -26,11 +26,6 @@ def horaDesligar(hora,minuto):
     atual = datetime.now()
     atual = atual.strftime('%H:%M')
     hora_atual = datetime.strptime(atual, '%H:%M')
-
-    #hora_inicio = int(datetime.strptime(atual, '%H:%M').strftime("%H"))
-    #minuto_inicio = int(datetime.strptime(atual, '%H:%M').strftime("%M"))
-    #hora_atual = int(datetime.strptime(desligar, '%H:%M').strftime("%H"))
-    #minuto_final = int(datetime.strptime(desligar, '%H:%M').strftime("%M"))
 
     if hora_atual < hora_desligar:
         segundos = abs((hora_desligar - hora_atual).seconds)
