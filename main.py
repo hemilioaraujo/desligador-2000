@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from tkinter import *
 from shutdown import cancelar, horaDesligar, desligar
 
