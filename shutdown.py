@@ -6,7 +6,7 @@ def desligar(tempo):
         comando = 'shutdown -s -t ' + str(tempo)
         return os.system(comando)
     elif platform.system() == 'Linux':
-        comando = 'sudo shutdown -h ' + str(tempo)
+        comando = 'shutdown -h ' + str(tempo)
         return os.system(comando)
     else:
         return 'Sistema Operacional desconhecido!'
@@ -15,7 +15,7 @@ def cancelar():
     if platform.system() == 'Windows':
         return os.system('shutdown /a')
     elif platform.system() == 'Linux':
-        return os.system('sudo shutdown -c')
+        return os.system('shutdown -c')
     else:
         return 'Sistema operacional desconhecido!'
 
@@ -37,15 +37,3 @@ def horaDesligar(hora,minuto):
         return segundos
     else:
         return 'xxx'
-
-'''
-a = horaDesligar(17,45)
-
-if a != 'xxx':
-    desligar(a)
-else:
-    print('Hora menor que a atual!')
-'''
-
-#time.sleep(10)
-
