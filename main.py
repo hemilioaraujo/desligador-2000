@@ -1,6 +1,6 @@
 from tkinter import *
 from shutdown import cancelar, horaDesligar, desligar
-
+#teste
 h = 0
 m = 0
 step = 1
